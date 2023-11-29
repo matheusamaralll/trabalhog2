@@ -1,0 +1,16 @@
+<!-- consultar.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consultar Currículo</title>
+</head>
+<body>
+    <h1>Consultar Currículo</h1>
+    <p><strong>Nome:</strong> {{ resume.nome }}</p>
+    <p><strong>Telefone:</strong> {{ resume.telefone }}</p>
+    <p><strong>Email:</strong> {{ resume.email }}</p>
+    <p><strong>Endereço Web:</strong> {{ resume.endereco_web }}</p>
+    <p><strong>Experiência Profissional:</strong> {{ resume.experiencia_profissional }}</p>
+    <a href="{{ url_for('index') }}">Voltar para a Listagem</a>
+</body>
+</html>

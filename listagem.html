@@ -1,0 +1,16 @@
+<!-- listagem.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Listagem de Currículos</title>
+</head>
+<body>
+    <h1>Listagem de Currículos</h1>
+    <ul>
+        {% for resume in resumes %}
+            <li><a href="{{ url_for('consultar', resume_id=resume.id) }}">{{ resume.nome }} - {{ resume.email_address }}</a></li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('cadastrar') }}">Cadastrar Novo Currículo</a>
+</body>
+</html>
